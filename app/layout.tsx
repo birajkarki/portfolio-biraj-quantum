@@ -35,7 +35,9 @@ export default function RootLayout({
       lang="en"
       className={`${dmSans.variable} ${spaceMono.variable} ${syne.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full bg-[#020408] font-[family-name:var(--font-dm-sans)] text-slate-100">
+        {children}
+      </body>
     </html>
   );
 }

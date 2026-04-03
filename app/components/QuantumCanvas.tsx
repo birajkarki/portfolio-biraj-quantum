@@ -119,5 +119,11 @@ export default function QuantumCanvas() {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="quantum-canvas" aria-hidden="true" />;
+  return (
+    <canvas
+      ref={canvasRef}
+      className="pointer-events-none fixed inset-0 z-0 h-full w-full opacity-65"
+      aria-hidden="true"
+    />
+  );
 }
